@@ -1,0 +1,135 @@
+<!DOCTYPE html> <!-- Define o tipo do documento como HTML5 -->
+<html lang="pt-BR"> <!-- Início do HTML, idioma português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+    <title>Meu Portfolio</title> <!-- Título da aba -->
+    <link rel="stylesheet" href="design.css"> <!-- Importa o CSS -->
+</head>
+<body>
+    <!-- Cabeçalho com navegação -->
+    <header>
+        <nav>
+            <h1>Sara Andresa</h1> <!-- Seu nome no topo -->
+            <ul>
+                <!-- Menu para navegar entre as seções -->
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção principal de destaque -->
+        <!-- Hero Section -->
+           <section id="hero">
+    <h2><span style="color:#ff6b57;">Olá.</span><br>Eu sou <span style="color:#fff;">Sara Andresa</span></h2>
+    <h1 style="font-size:2.5rem; margin: 10px 0 20px 0;">Desenvolvedora de Software</h1>
+    <div class="hero-buttons">
+       <div class="hero-buttons">
+    <a href="#contato" class="btn-primary">Tem um projeto?</a>
+    <!-- Botão para baixar o currículo (só funciona após escolher um arquivo) -->
+    <a href="#" class="btn-secondary" id="curriculo-link" download style="margin-right:0; pointer-events: none; opacity: 0.5;">Meu currículo</a>
+    <!-- Apenas para você: botão de upload do currículo -->
+    <input type="file" id="upload-curriculo" accept="application/pdf,image/jpeg" style="display:block; margin: 10px auto 0 auto; max-width:200px;">
+</div>
+    </div>
+    <div class="hero-image">
+        <img src="footsss.jpg" alt="Sara Andresa">
+    </div>
+</section>
+
+        <!-- Seção sobre você -->
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Sou apaixonada por tecnologia e desenvolvimento web. Tenho experiência em criar soluções digitais modernas e eficientes para empresas e pessoas.</p>
+        </section>
+
+        <!-- Seção dos serviços oferecidos -->
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <div class="servicos-grid">
+                <div class="servico">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de sites responsivos e modernos.</p>
+                </div>
+                <div class="servico">
+                    <h3>Desenvolvimento de Apps</h3>
+                    <p>Aplicativos personalizados para web e mobile.</p>
+                </div>
+                <div class="servico">
+                    <h3>Hospedagem de Sites</h3>
+                    <p>Hospedagem segura e confiável para seu projeto.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de habilidades -->
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>React</li>
+                <li>Git</li>
+                <li>Github</li>
+            </ul>
+        </section>
+
+        <!-- Seção de estatísticas -->
+        <section id="estatisticas">
+            <h2>Estatísticas</h2>
+            <div class="stats-grid">
+                <div>
+                    <span>120+</span>
+                    <p>Projetos completos</p>
+                </div>
+                <div>
+                    <span>95%</span>
+                    <p>Satisfação dos clientes</p>
+                </div>
+                <div>
+                    <span>10+</span>
+                    <p>Anos de experiência</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de projetos -->
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-grid">
+                <div class="projeto">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do projeto</p>
+                </div>
+                <div class="projeto">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do projeto</p>
+                </div>
+                <div class="projeto">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição do projeto</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: sara@email.com</p> <!-- Troque pelo seu email real -->
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Sara Andresa. Todos os direitos reservados.</p>
+    </footer>
+    <script src="javascrip.js"></script>
+</body>
+</html>

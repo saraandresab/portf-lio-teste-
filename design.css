@@ -1,0 +1,292 @@
+/* =========================
+   Estilo base do site
+   ========================= */
+body {
+    background: #181f2a; /* Cor de fundo escura */
+    color: #fff;         /* Cor do texto padrão */
+    font-family: 'Segoe UI', Arial, sans-serif; /* Fonte moderna */
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   Cabeçalho do site
+   ========================= */
+header {
+    background: #232b39; /* Fundo do cabeçalho */
+    padding: 30px 0;     /* Espaçamento interno */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Sombra suave */
+}
+
+/* =========================
+   Navegação principal
+   ========================= */
+nav {
+    max-width: 1100px;   /* Largura máxima */
+    margin: 0 auto;      /* Centraliza */
+    display: flex;       /* Usa flexbox */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Espaço entre nome e menu */
+    padding: 0 30px;
+}
+
+nav h1 {
+    font-size: 2rem;     /* Tamanho do nome */
+    color: #ff6b57;      /* Cor laranja */
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;    /* Remove marcadores */
+    display: flex;       /* Links em linha */
+    gap: 30px;           /* Espaço entre links */
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;         /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: 500;    /* Deixa o texto do link mais forte */
+    transition: color 0.2s; /* Animação suave ao mudar a cor */
+}
+
+nav a:hover {
+    color: #ff6b57;      /* Cor ao passar o mouse */
+}
+
+/* =========================
+   Conteúdo principal
+   ========================= */
+main {
+    max-width: 1100px;   /* Largura máxima */
+    margin: 40px auto;   /* Centraliza e dá espaço acima/abaixo */
+    padding: 0 30px;     /* Espaço nas laterais */
+}
+
+/* =========================
+   Seção de destaque (hero)
+   ========================= */
+/* Hero Section */
+#hero {
+    background: #232b39;
+    padding: 60px 20px 40px 20px;
+    border-radius: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    position: relative;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-right: 0;
+    transition: background 0.2s, color 0.2s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.btn-primary {
+    background: #ff6b57;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #ff3b1f;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-secondary:hover {
+    background: #fff;
+    color: #232b39;
+}
+
+/* Upload input (apenas para você, pode esconder depois de usar) */
+#upload-curriculo {
+    margin-top: 10px;
+    color: #fff;
+    background: #232b39;
+    border: 1px solid #ff6b57;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hero image */
+.hero-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ff6b57;
+    background: #232b39;
+    margin-top: 30px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   Seções gerais
+   ========================= */
+section {
+    margin-bottom: 40px;     /* Espaço abaixo de cada seção */
+}
+
+h2 {
+    color: #ff6b57;          /* Títulos das seções em laranja */
+    margin-bottom: 18px;     /* Espaço abaixo do título */
+    font-size: 1.7rem;       /* Tamanho do título */
+}
+
+/* =========================
+   Grids de serviços, projetos e estatísticas
+   ========================= */
+.servicos-grid, .projetos-grid, .stats-grid {
+    display: flex;           /* Usa flexbox para alinhar os itens */
+    gap: 30px;               /* Espaço entre os itens */
+    flex-wrap: wrap;         /* Quebra linha se faltar espaço */
+    justify-content: center; /* Centraliza os itens */
+}
+
+.servico, .projeto, .stats-grid > div {
+    background: #232b39;     /* Fundo escuro dos cards */
+    border-radius: 10px;     /* Cantos arredondados */
+    padding: 25px 20px;      /* Espaçamento interno */
+    min-width: 220px;        /* Largura mínima */
+    text-align: center;      /* Centraliza o texto */
+    margin-bottom: 15px;     /* Espaço abaixo do card */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Sombra suave */
+}
+
+.servico h3, .projeto h3 {
+    color: #ff6b57;          /* Título dos cards em laranja */
+    margin-bottom: 10px;     /* Espaço abaixo do título */
+}
+
+/* =========================
+   Lista de habilidades
+   ========================= */
+.skills-list {
+    display: flex;           /* Habilidades em linha */
+    flex-wrap: wrap;         /* Quebra linha se faltar espaço */
+    gap: 18px;               /* Espaço entre habilidades */
+    list-style: none;        /* Remove marcadores */
+    padding: 0;
+    justify-content: center; /* Centraliza as habilidades */
+}
+
+.skills-list li {
+    background: #232b39;     /* Fundo escuro */
+    color: #ff6b57;          /* Texto laranja */
+    padding: 10px 22px;      /* Espaçamento interno */
+    border-radius: 20px;     /* Cantos arredondados */
+    font-weight: 500;        /* Texto mais forte */
+    font-size: 1rem;         /* Tamanho do texto */
+    margin-bottom: 10px;     /* Espaço abaixo */
+}
+
+/* =========================
+   Estatísticas
+   ========================= */
+.stats-grid {
+    gap: 40px;               /* Espaço entre os cards de estatística */
+}
+
+.stats-grid > div {
+    min-width: 160px;        /* Largura mínima dos cards */
+}
+
+.stats-grid span {
+    display: block;          /* Ocupa linha inteira */
+    font-size: 2rem;         /* Tamanho grande */
+    color: #ff6b57;          /* Laranja */
+    font-weight: bold;       /* Negrito */
+    margin-bottom: 8px;      /* Espaço abaixo */
+}
+
+/* =========================
+   Rodapé
+   ========================= */
+footer {
+    background: #232b39;     /* Fundo escuro */
+    color: #fff;             /* Texto branco */
+    text-align: center;      /* Centraliza o texto */
+    padding: 18px 0;         /* Espaçamento interno */
+    margin-top: 40px;        /* Espaço acima do rodapé */
+    font-size: 1rem;         /* Tamanho do texto */
+    letter-spacing: 1px;     /* Espaçamento entre letras */
+    border-radius: 0 0 12px 12px; /* Cantos arredondados embaixo */
+}
+
+/* =========================
+   Responsividade para telas menores que 900px
+   ========================= */
+@media (max-width: 900px) {
+    /* Deixa nav e main em coluna e ajusta o padding */
+    nav, main {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    /* Deixa os grids em coluna e diminui o espaço entre eles */
+    .servicos-grid, .projetos-grid, .stats-grid {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+
+/* =========================
+   Responsividade para telas menores que 600px
+   ========================= */
+@media (max-width: 600px) {
+    /* Menu de navegação em coluna e alinhado à esquerda */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    /* Reduz o padding do hero para telas pequenas */
+    #hero {
+        padding: 30px 5px;
+    }
+    /* Reduz o padding do conteúdo principal */
+    main {
+        padding: 0 5px;
+    }
+}
+
+/* =========================
+   Imagem do topo (perfil redonda e centralizada)
+   ========================= */
+.hero-image {
+    margin: 30px auto 0 auto; /* Centraliza e dá espaço acima */
+    text-align: center;        /* Centraliza o conteúdo dentro da div */
+}
+.hero-image img {
+    width: 180px;              /* Largura da imagem */
+    height: 180px;             /* Altura da imagem */
+    object-fit: cover;         /* Corta a imagem para caber certinho no círculo */
+    border-radius: 50%;        /* Deixa a imagem redonda */
+    border: 4px solid #ff6b57; /* Borda laranja ao redor da imagem */
+    background: #232b39;       /* Fundo atrás da imagem */
+}
